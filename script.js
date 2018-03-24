@@ -1,100 +1,109 @@
-
-/*             JUST A GENERATOR FUNCTION THAT I WANT FOR REFERENCE
+//          JUST A GENERATOR FUNCTION THAT I WANT FOR REFERENCE
 //declare all the functings to yield in the generator and tie them together.
-const thirdTier={
-    heading:'Third tier decks',
-paladin:'Aggro Paladin',
-priest:'Big Priest',
-mage:'Control Mage',
-hunter:'Midrange Hunter',
-[Symbol.iterator]: function*(){
+// const thirdTier={
+//     heading:'Third tier decks',
+// paladin:'Aggro Paladin',
+// priest:'Big Priest',
+// mage:'Control Mage',
+// hunter:'Midrange Hunter',
+// [Symbol.iterator]: function*(){
     
 
-    yield this.heading;
+//     yield this.heading;
 
-    yield this.paladin;
+//     yield this.paladin;
     
-    yield this.priest;
+//     yield this.priest;
     
-    yield this.mage;
+//     yield this.mage;
     
 
 
-    yield this.hunter;
-}
-};
+//     yield this.hunter;
+// }
+// };
 
 
 
-const secondTier ={
+// const secondTier ={
  
-    heading:'Second tier decks',
-druid:'Agro Druid',
-shaman:'Evolve Shaman',
-paladin:"Midrange Paladin",
-paladin2:'Murloc Paladin',
-warrior:'Pirate Warrior',
-mage:'Tempo Mage',
-warlock:'Zoo Warlock',
-[Symbol.iterator]: function*(){
-    yield this.heading;
-    yield this.druid;
+//     heading:'Second tier decks',
+// druid:'Agro Druid',
+// shaman:'Evolve Shaman',
+// paladin:"Midrange Paladin",
+// paladin2:'Murloc Paladin',
+// warrior:'Pirate Warrior',
+// mage:'Tempo Mage',
+// warlock:'Zoo Warlock',
+// [Symbol.iterator]: function*(){
+//     yield this.heading;
+//     yield this.druid;
     
-    yield this.shaman;
+//     yield this.shaman;
     
-    yield this.paladin;
+//     yield this.paladin;
     
-    yield this.paladin2;
+//     yield this.paladin2;
     
-    yield this.warrior;
+//     yield this.warrior;
     
-    yield this.mage;
+//     yield this.mage;
     
-    yield this.warlock;
-}
+//     yield this.warlock;
+// }
 
 
-};
+// };
 
 
 
-const topTier ={
-    //the top code ties the objects together
-    // all the other objects are tied in this one
-    //if you make a fouth tier it has to be notated here
-    secondTier,
-    thirdTier,
-    heading:'Top teir decks',
-priest:"Highlander Priest",
-druid:'Jade Druid',
-rogue:'Tempo Rogue'
+// const tierList ={
+//     //the top code ties the objects together
+//     // all the other objects are tied in this one
+//     //if you make a fouth tier it has to be notated here
+//     secondTier,
+//     thirdTier,
+//     heading:'Top teir decks',
+// priest:"Highlander Priest",
+// druid:'Jade Druid',
+// rogue:'Tempo Rogue',
 
-};
+// [Symbol.iterator]: function*(){
+
+  
+//       yield this.heading;
+
+// yield this.priest;
+
+// yield this.druid;
+
+// yield this.rogue;
+// // makes a door that goes into the next function
+// yield* this.secondTier;
+// yield* this.thirdTier;
+
+  
+// }
+
+// };
 
 
-function* Hearthstone(decks){
 
 // this calls code out of the topTier object
-    yield decks.heading;
-
-yield decks.priest;
-
-yield decks.druid;
-
-yield decks.rogue;
-// makes a door that goes into the next function
-yield* decks.secondTier;
-yield* decks.thirdTier;
 
 
 
-};
+
 
 
 //run a for loop over the iterator and then output
-for(let decks of Hearthstone(topTier)){
-    console.log(decks);
-};
+for(let name of tierList){
+ console.log(name)
+}
+
+
+
+
 
 */
 
